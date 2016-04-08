@@ -11,7 +11,7 @@
     "test:node": "dignified-test node",
     "test:browser": "dignified-test browser",
     "release": "dignified-release",
-    "coverage": "istanbul cover --print both -- _mocha tests/*.spec.js"
+    "coverage": "dignified-coverage"
   },
   "repository": {
     "type": "git",
@@ -47,7 +47,7 @@
     "webpack": {
       "resolve": {
         "alias": {
-          "node-forge": "../deps/forge.bundle.js"
+          "node-forge": "../vendor/forge.bundle.js"
         }
       }
     }

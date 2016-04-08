@@ -9,14 +9,38 @@ peer-info JavaScript implementation
 
 > Peer Info contains information about a peer Id and its multiaddrs. This module is used by IPFS and libp2p.
 
+# Installation
+
+## npm
+
+```sh
+> npm i peer-info
+```
+
+## Use in Node.js
+
+```JavaScript
+var PeerInfo = require('peer-info')
+```
+
+## Use in a browser with browserify, webpack or any other bundler
+
+The code published to npm that gets loaded on require is in fact a ES5 transpiled version with the right shims added. This means that you can require it and use with your favourite bundler without having to adjust asset management process.
+
+```JavaScript
+var PeerInfo = require('peer-info')
+```
+
+## Use in a browser Using a script tag
+
+Loading this module through a script tag will make the `PeerInfo` obj available in the global namespace.
+
+```html
+<script src="https://npmcdn.com/peer-info/dist/index.min.js"></script>
+<!-- OR -->
+<script src="https://npmcdn.com/peer-info/dist/index.js"></script>
+```
+
 # Usage
 
-### In Node.js through npm
-
-```bash
-> npm install --save peer-info
-```
-
-```javascript
-const PeerInfo = require('peer-info')
-```
+**DOCS IN PROGRESS**
